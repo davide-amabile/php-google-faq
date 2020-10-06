@@ -39,11 +39,6 @@ $faq = [
   ]
 ];
 
-// // creare il ciclo foreach per entrare nel primo arry
-// for ($i =0; $i < count($faq); $i++){
-//   echo $faq[$i]["question"]."<br>";
-//   echo $faq[$i]["answer"]."<br>";
-// }
 ?>
 
 <!DOCTYPE html>
@@ -54,10 +49,49 @@ $faq = [
     <title>Google faq</title>
   </head>
   <body>
+    <!-- nav superiore -->
+    <div class="nav_superiore">
+      <!-- container nav up -->
+     <div class="ctn_logo flex">
+       <div class="logo">
+        <img src="img/logo.png" alt="">
+       </div>
+       <div class="logo privacy">
+        <span>Privacy e termini</span>
+       </div>
+     </div>
+     <!-- /container nav up -->
+     <!-- conatiner nav bottom -->
+     <div class="ctn_nav_bottom flex">
+       <div class="nav_right">
+         <ul>
+           <li>Introduzione</li>
+           <li>Norme sulla privacy</li>
+           <li>Termini di servizio</li>
+           <li>Tecnologie</li>
+           <li>Domande frequenti</li>
+         </ul>
+       </div>
+       <div class="nav_left">
+         <span>davideamabile81@gmail.com</span>
+
+       </div>
+
+     </div>
+     <!-- conatiner nav bottom -->
+
+
+    </div>
+    <!-- nav supreriore -->
+
+
+
     <div class="wrap_question">
     <!-- creare il ciclo  -->
     <?php for ($i =0; $i < count($faq); $i++){ ?>
+      <!-- stampa domande -->
       <h3><?php echo $faq[$i]["question"]; ?></h3>
+      <!-- stampa risposte -->
       <p><?php echo $faq[$i]["answer"]; ?></p>
     <?php } ?>
     </div>

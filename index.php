@@ -38,4 +38,12 @@ $faq = [
                 non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili qui. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio."
   ];
 ];
+
+// creare il ciclo foreach per entrare nel primo arry
+foreach ($faq as $k => $list) {
+  // creare un altro ciclo per stampare le propietà negli array interni
+  foreach ($list as $key => $value) {
+    echo $value["question"];
+  }
+}
 ?>

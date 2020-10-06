@@ -50,19 +50,16 @@ $faq = [
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Google faq</title>
   </head>
   <body>
-    <div class="wrap">
-
+    <div class="wrap_question">
     <!-- creare il ciclo  -->
     <?php for ($i =0; $i < count($faq); $i++){ ?>
       <h3><?php echo $faq[$i]["question"]; ?></h3>
       <p><?php echo $faq[$i]["answer"]; ?></p>
     <?php } ?>
-
-
-
     </div>
   </body>
 </html>

@@ -39,8 +39,30 @@ $faq = [
   ]
 ];
 
-// creare il ciclo foreach per entrare nel primo arry
-for ($i =0; $i < count($faq); $i++){
-  echo $faq[$i]["question"]."<br>".$faq[$i]["answer"]."<br>";
-}
+// // creare il ciclo foreach per entrare nel primo arry
+// for ($i =0; $i < count($faq); $i++){
+//   echo $faq[$i]["question"]."<br>";
+//   echo $faq[$i]["answer"]."<br>";
+// }
 ?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google faq</title>
+  </head>
+  <body>
+    <div class="wrap">
+
+    <!-- creare il ciclo  -->
+    <?php for ($i =0; $i < count($faq); $i++){ ?>
+      <h3><?php echo $faq[$i]["question"]; ?></h3>
+      <p><?php echo $faq[$i]["answer"]; ?></p>
+    <?php } ?>
+
+
+
+    </div>
+  </body>
+</html>
